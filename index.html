@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Product Card</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+   
+    
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+
+    <!--=========================slider bar========================-->
+    <link href="css1/side-slider.css" rel="stylesheet">
+
+    <script src="jquery-1.11.3.min.js"></script>
+    <script src="js1/jquery.side-slider.js"></script>
+
+
+   <!--========================slider ends========================-->
+
+    <!--For Side Down Button-->
+
+    <style>
+        .box4{
+           position:absolute;
+           top: 50%;
+           left: 95%;
+           transform: translate(-50%,-50%);
+        }
+        .box4 span{
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-bottom: 3px solid #000;
+          border-right: 3px solid #000;
+          transform: rotate(45deg);
+          margin: -10px;
+          animation: animate 2s infinite;
+          font-weight: bold;
+        }
+        .box4 span:nth-child(2){
+          animation-delay: -0.2s;
+        }
+        .box4 span:nth-child(3){
+          animation-delay: -0.4s;
+        }
+        @keyframes animate{
+          0%{
+            opacity: 0;
+            transform: rotate(45deg) translate(-20px,-20px);
+          }
+          50%{
+            opacity: 1;
+          }
+          100%{
+            opacity: 0;
+            transform: rotate(45deg) translate(20px,20px);
+          }
+        }
+
+        /* for video border*/
+        .my_class_name {
+             padding: 6px;
+           /*  border: 9px outset #ddd;*/
+             box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+             border: 1px solid rgba(22, 22, 2, 0.2);
+             border-left-color: rgba(200,200,200,0.1);
+             border-right-color: rgba(180, 28, 28, 0.1);
+             }
+
+    </style>
+
+    <!--Side Down Button Ends-->
+
+  </head>
+  <body> 
+       <main>
+         <!--sticky menu-->
+      
+         <!--ends here-->
+      <div class="content">
+               <!--Adding here-->
+         <!--floating menu start-->
+         <div id="mySidenav" class="sidenav">
+          <a href="#" id="Home">Home &nbsp;&nbsp;&nbsp;<span><i class="fas fa-home"></i></span></a>
+          <a href="#" id="Blog">Blog &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<span><i class="fas fa-blog"></i></span></a>
+          <a href="#home_section1" id="Brands">Brands &nbsp;&nbsp;<span><i class="fas fa-box"></i></span></a>
+          <a href="contact.html" id="Contact">Contact <span><i class="fas fa-phone"></i></span></a>
+        </div>
+        <!--End here-->
+
+        <div class="active">
+          <h2>One stop Kitchen</h2>
+          <h3>Time For Revolution</h3>
+      </div>
+        <!--ending here-->
+        <div class="card-container">
+         <div class="card-face face-1">
+            <div class="top-part">
+              <div class="logo hide">
+                <img src="img/logo.png" alt="update Soon" />
+              </div>
+              <h2 class="hide">OSK Revolution</h2>
+              <div class="shoe-info">
+                <span class="shoe-new hide">New</span>
+                <span class="shoe-year hide">2021</span>
+              </div>
+            </div>
+
+            <div class="bottom-part">
+              <h2 class="shoe-price hide">One Stop Kitchen</h2>
+              <div class="right-arrow hide">
+                <img src="img/right-arrow.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-face face-2">
+            <div class="top-part">
+              <div class="header">
+                <h3 class="heading hide">One Stop Kitchen</h3>
+                <a href="#" class="wish hide">
+                  <i class="far fa-heart"></i>
+                </a>
+              </div>
+              <ul class="features hide">
+                <li>Connecting your business.</li>
+                <li>Health Support product.</li>
+                <li>Food Revolution.</li>
+              </ul>
+            </div>
+
+            <div class="buy-wrap">
+              <a href="about.html" class="buy hide">
+                Read More
+              </a>
+            </div>
+          </div>
+
+          <div class="shoe-image-wrapper">
+            <div class="shoe-img">
+              <img src="img/pan1.png" alt="OSK" class="shoe" />
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!--Side Down Button-->
+      <div class="box4">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <!--Side Down Button End-->
+</main>
+
+ 
+  
+<!---ScrollTop Start here--> <div class="scrollTop" onclick="scrollToTop();"> </div>  <!--ScrollTop End-->  
+ 
+
+<!--=================================sliderbar======================================-->
+ 
+<div class="sideslider" id="sideslider">
+  <div class="sideslider-tab">Franchise&nbsp;&nbsp;</div>
+  <a href="#">
+    <div id="sideslider-smartbutton">
+      <div id="sideslider-text">
+        <span class="header"><a href="franchise.html" class="f1">Franchise</a></span>
+        <span class="line"> &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      </div>
+      <div class="sideclear"></div>
+    </div>
+  </a>
+  <div class="sideslider-close sideslider-close_en">Close</div>
+</div>
+
+
+
+
+<!--=================================End sliderbar======================================-->
+ 
+
+
+
+
+
+    <div class="header7"> 
+      <h1> Our Brands</h1>
+    <h3>Welcome to the universe of One Stop Kitchen</h3>
+  </div>
+   
+       <!---cards pop icons-->
+       <section id="home_section1">
+       <div class="container">
+         <div class="box" id="blur">
+          <h2 class="Name">OSK</h2>
+           <a href="#blur" class="buy" onclick="toggle()">MoreInfo</a>
+           <div class="circle"></div>
+           <img src="img/s3.png" class="product">
+          </div>
+
+          <!--Adding line from here-->
+        
+          <div id="popup">
+            <h2>OSK</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatibus assumenda.
+             Ullam laborum deserunt vitae officiis facilis placeat quis saepe, voluptate ad dolor enim 
+             recusandae mollitia ipsa fuga quos excepturi.</p>
+             <a href="#blur" onclick="toggle()">Close</a>
+         </div>
+
+        <!--Adding line ends here-->
+
+
+        
+
+         <div class="box">
+          <h2 class="Name">Biryani</h2>
+          <a href="#" class="buy">MoreInfo</a>
+          <div class="circle"></div>
+          <img src="img/s1.png" class="product">
+        </div>
+
+          <!--Adding line from here-->
+        
+       
+        <!--Adding line ends here-->
+
+
+
+        <div class="box">
+          <h2 class="Name">HeathyCo</h2>
+          <a href="#" class="buy">MoreInfo</a>
+          <div class="circle"></div>
+          <img src="img/s4.png" class="product">
+        </div>
+        <div class="box">
+          <h2 class="Name">OSKPlus</h2>
+          <a href="#" class="buy">MoreInfo</a>
+          <div class="circle"></div>
+          <img src="img/s2.png" class="product">
+        </div>
+       </div>
+      </section>
+       <!---end here-->
+
+ 
+
+       <!--About start here-->
+<div class="header7">
+  <h1>Founders Of OSK</h1>
+  <h3>"Always deliver more than expected"</h3>
+</div>  
+
+
+ <div class="wrapper1">
+  <div class="container2">
+  <div class="column">
+    <div class="card2">
+      <div class="card-bg2"></div>
+      <div class="pic1">
+        <img src="img/r1.jpg">
+      </div>
+      <div class="description1">
+         <h3>Rahul Hazarika</h3>
+         <h4>Founder & CEO</h4>
+         <h4>Guwahati</h4>
+         <ul>
+           <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+         </ul>
+         <a href="Rahul.html"class="b2">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+   <div class="card2">
+     <div class="card-bg2"></div>
+     <div class="pic1">
+       <img src="img/a1.jpg">
+     </div>
+     <div class="description1">
+        <h3>Abhilash Baruah</h3>
+        <h4>COO</h4>
+        <h4>Guwahati</h4>
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <a href="Abhilash.html"class="b2">Read more</a>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+
+
+<!--End of about-->
+
+
+
+
+
+
+       <!--Achivements start here-->
+       <div class="header7">
+        <h1>Our Accomplishments</h1>
+      </div>
+
+       <div class="container1">
+            <div class="card">
+             <div class="imgBx">
+               <img src="img/2018.png">
+             </div>
+             <div class="content1">
+               <div class="contentBx">
+                 <h3>Through Innovation<br><span>OneStopKitchen</span></h3>
+               </div>
+               <ul class="sci">
+                  <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li style="--i:2;"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li style="--i:3;"><a href="#"><i class="fab fa-instagram"></i></a></li>
+               </ul>
+             </div>
+           </div>   <!--Card div ends-->
+           <div class="card">
+            <div class="imgBx">
+              <img src="img/2019.png">
+            </div>
+            <div class="content1">
+              <div class="contentBx">
+                <h3>Best Cloud kitchen<br><span>OneStopKitchen</span></h3>
+              </div>
+              <ul class="sci">
+                 <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                 <li style="--i:2;"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                 <li style="--i:3;"><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>  <!--end here-->
+          <div class="card">
+            <div class="imgBx">
+              <img src="img/2020.png">
+            </div>
+            <div class="content1">
+              <div class="contentBx">
+                <h3>Best Cloud kitchen<br><span>OneStopKitchen</span></h3>
+              </div>
+              <ul class="sci">
+                 <li style="--i:1;"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                 <li style="--i:2;"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                 <li style="--i:3;"><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div> 
+       </div>
+       <!--Achivements end here-->
+      
+       <!--apps design begins-->
+       <div class="header7">
+        <h1>Download App from here</h1>
+      </div> 
+        <div class="main4">
+    <!--==============================for video====================-->
+
+   
+     <!-- <video  class="my_class_name" controls="controls" width="500" height="300"  controls muted autoplay loop="true">
+    </video>
+    <source src="">-->
+      <iframe width="500" class="my_class_name" height="300" src="https://www.youtube.com/embed/hkZJwI1r9tQ"  ontrols muted autoplay loop="true" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ 
+    
+   
+
+
+   <!--===============================end video================-->
+   
+        <div class="card4">
+          <div class="circle4"></div>
+          <img src="img/p1.png" alt="phone">
+          <div class="content4">
+               <h2>Download Apps</h2>
+               <p>For more download the app from given link</p>
+                 <a href="https://play.google.com/store/apps/details?id=com.oskdev_app&hl=en&gl=US">Download now</a>
+          </div>
+        </div>
+      </div>
+    <!-- apps design ends-->
+
+
+    <!--===============================Up Button Start=========================-->
+    
+          <!--<a class="gotopbtn" hre="#"><i class="fas fa-arrow-up"></i></a>-->
+    <!--===============================Up button Stop===========================-->
+
+
+
+
+      <!--footer start-->
+  
+      <footer class="sticky-footer">
+        <!-- <h2>Footer Stick to the Bottom</h2> -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Join us</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="file:///C:/Users/Sagar%20Gurung/Desktop/3D-Product-Card-main/3D-Product-Card-main/contact.html">Contact</a></li>
+            <li class="sideWay"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;info@onestopkitchen.in</a></li>
+         </ul>
+        <p> © Copyright Urbanmarq Technologies 2021.</p>
+    </footer>
+
+
+      <!--footer end-->
+
+      
+         <script src="vanilla-tilt.min.js"></script>
+         <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+	           	max: 25,
+		          speed: 400
+	      });
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}     
+
+
+/*sticky js*/
+
+$('#sideslider').sideSlider({
+
+// animation speed
+speed        : 1,
+
+// callback
+complete : null
+
+});
+
+/*end sticky*/
+
+/*****************************up arrow******************************/
+   window.addEventListener('scroll', function(){
+     var scroll = document.querySelector('.scrollTop');
+     scroll.classList.toggle("active" , window.scrollY > 500)
+   })
+
+   function scrollToTop(){
+      window.scrollTo({
+        top:1,
+        behaviour: 'smooth'
+      })
+   }
+
+
+/*****************************up arrow end******************************/
+
+/* blur function*/
+   
+    function toggle(){
+      var blur = document.getElementById('blur');
+      blur.classList.toggle('active');
+      var popup = document.getElementById('popup');
+      popup.classList.toggle('active');
+
+      }
+  /* end blur*/
+ 
+      </script>
+      </body>
+</html>

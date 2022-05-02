@@ -1,0 +1,18 @@
+
+
+ <div class="open">
+         <div class="layer"></div>
+         <div class="layer"></div>
+       </div>
+
+<section><!--Start from here-->
+         <div class="bannerText1">
+           <h2>Our Apps</h2>
+           <h3>Innovation Start with Click</h3>
+           <p>We present you our own app which merges all our brands together. Now order everything from this one single app
+              without any hassle and your order will be delivered at your doorstep.</p>
+              <a href="#">Click Here</a>
+         </div>
+         <img src="img/m1.png" class="m1">
+       </section>
+       <!--apps design ends-->
